@@ -21,6 +21,13 @@
     //This was put in by default
     //self.window.backgroundColor = [UIColor whiteColor];
     
+    //Things to try #13
+    NSLog(@"application:didFinishLaunchingWithOptions: b.origin == (%g, %g), b.size == %g × %g",
+          self.window.bounds.origin.x,
+          self.window.bounds.origin.y,
+          self.window.bounds.size.width,
+          self.window.bounds.size.height);
+    
     
     //Adding custom code here
     view = [[View alloc] initWithFrame: [UIScreen mainScreen].applicationFrame];
