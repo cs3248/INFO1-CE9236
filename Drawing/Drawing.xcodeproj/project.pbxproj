@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C656A63814594492005306FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656A63714594492005306FA /* UIKit.framework */; };
+		C656A63A14594492005306FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656A63914594492005306FA /* Foundation.framework */; };
+		C656A63C14594492005306FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656A63B14594492005306FA /* CoreGraphics.framework */; };
+		C656A64214594492005306FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C656A64014594492005306FA /* InfoPlist.strings */; };
+		C656A64414594492005306FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C656A64314594492005306FA /* main.m */; };
+		C656A64814594492005306FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C656A64714594492005306FA /* AppDelegate.m */; };
+		C656A65014594493005306FA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656A64F14594492005306FA /* SenTestingKit.framework */; };
+		C656A65114594493005306FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656A63714594492005306FA /* UIKit.framework */; };
+		C656A65214594493005306FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656A63914594492005306FA /* Foundation.framework */; };
+		C656A65A14594493005306FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C656A65814594493005306FA /* InfoPlist.strings */; };
+		C656A65D14594493005306FA /* DrawingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C656A65C14594493005306FA /* DrawingTests.m */; };
+		C656A66814594C21005306FA /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = C656A66714594C21005306FA /* View.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C656A65314594493005306FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C656A62A14594492005306FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C656A63214594492005306FA;
+			remoteInfo = Drawing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C656A63314594492005306FA /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C656A63714594492005306FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C656A63914594492005306FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C656A63B14594492005306FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C656A63F14594492005306FA /* Drawing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Drawing-Info.plist"; sourceTree = "<group>"; };
+		C656A64114594492005306FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C656A64314594492005306FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C656A64514594492005306FA /* Drawing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Drawing-Prefix.pch"; sourceTree = "<group>"; };
+		C656A64614594492005306FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C656A64714594492005306FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C656A64E14594492005306FA /* DrawingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C656A64F14594492005306FA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C656A65714594493005306FA /* DrawingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawingTests-Info.plist"; sourceTree = "<group>"; };
+		C656A65914594493005306FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C656A65B14594493005306FA /* DrawingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingTests.h; sourceTree = "<group>"; };
+		C656A65C14594493005306FA /* DrawingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingTests.m; sourceTree = "<group>"; };
+		C656A66614594C21005306FA /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		C656A66714594C21005306FA /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C656A63014594492005306FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656A63814594492005306FA /* UIKit.framework in Frameworks */,
+				C656A63A14594492005306FA /* Foundation.framework in Frameworks */,
+				C656A63C14594492005306FA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C656A64A14594492005306FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656A65014594493005306FA /* SenTestingKit.framework in Frameworks */,
+				C656A65114594493005306FA /* UIKit.framework in Frameworks */,
+				C656A65214594493005306FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C656A62814594492005306FA = {
+			isa = PBXGroup;
+			children = (
+				C656A63D14594492005306FA /* Drawing */,
+				C656A65514594493005306FA /* DrawingTests */,
+				C656A63614594492005306FA /* Frameworks */,
+				C656A63414594492005306FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C656A63414594492005306FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C656A63314594492005306FA /* Drawing.app */,
+				C656A64E14594492005306FA /* DrawingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C656A63614594492005306FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C656A63714594492005306FA /* UIKit.framework */,
+				C656A63914594492005306FA /* Foundation.framework */,
+				C656A63B14594492005306FA /* CoreGraphics.framework */,
+				C656A64F14594492005306FA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C656A63D14594492005306FA /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				C656A64614594492005306FA /* AppDelegate.h */,
+				C656A64714594492005306FA /* AppDelegate.m */,
+				C656A66614594C21005306FA /* View.h */,
+				C656A66714594C21005306FA /* View.m */,
+				C656A63E14594492005306FA /* Supporting Files */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		C656A63E14594492005306FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C656A63F14594492005306FA /* Drawing-Info.plist */,
+				C656A64014594492005306FA /* InfoPlist.strings */,
+				C656A64314594492005306FA /* main.m */,
+				C656A64514594492005306FA /* Drawing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C656A65514594493005306FA /* DrawingTests */ = {
+			isa = PBXGroup;
+			children = (
+				C656A65B14594493005306FA /* DrawingTests.h */,
+				C656A65C14594493005306FA /* DrawingTests.m */,
+				C656A65614594493005306FA /* Supporting Files */,
+			);
+			path = DrawingTests;
+			sourceTree = "<group>";
+		};
+		C656A65614594493005306FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C656A65714594493005306FA /* DrawingTests-Info.plist */,
+				C656A65814594493005306FA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C656A63214594492005306FA /* Drawing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C656A66014594493005306FA /* Build configuration list for PBXNativeTarget "Drawing" */;
+			buildPhases = (
+				C656A62F14594492005306FA /* Sources */,
+				C656A63014594492005306FA /* Frameworks */,
+				C656A63114594492005306FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Drawing;
+			productName = Drawing;
+			productReference = C656A63314594492005306FA /* Drawing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C656A64D14594492005306FA /* DrawingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C656A66314594493005306FA /* Build configuration list for PBXNativeTarget "DrawingTests" */;
+			buildPhases = (
+				C656A64914594492005306FA /* Sources */,
+				C656A64A14594492005306FA /* Frameworks */,
+				C656A64B14594492005306FA /* Resources */,
+				C656A64C14594492005306FA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C656A65414594493005306FA /* PBXTargetDependency */,
+			);
+			name = DrawingTests;
+			productName = DrawingTests;
+			productReference = C656A64E14594492005306FA /* DrawingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C656A62A14594492005306FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C656A62D14594492005306FA /* Build configuration list for PBXProject "Drawing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C656A62814594492005306FA;
+			productRefGroup = C656A63414594492005306FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C656A63214594492005306FA /* Drawing */,
+				C656A64D14594492005306FA /* DrawingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C656A63114594492005306FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656A64214594492005306FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C656A64B14594492005306FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656A65A14594493005306FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C656A64C14594492005306FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C656A62F14594492005306FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656A64414594492005306FA /* main.m in Sources */,
+				C656A64814594492005306FA /* AppDelegate.m in Sources */,
+				C656A66814594C21005306FA /* View.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C656A64914594492005306FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656A65D14594493005306FA /* DrawingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C656A65414594493005306FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C656A63214594492005306FA /* Drawing */;
+			targetProxy = C656A65314594493005306FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C656A64014594492005306FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C656A64114594492005306FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C656A65814594493005306FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C656A65914594493005306FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C656A65E14594493005306FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C656A65F14594493005306FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C656A66114594493005306FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drawing/Drawing-Prefix.pch";
+				INFOPLIST_FILE = "Drawing/Drawing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C656A66214594493005306FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drawing/Drawing-Prefix.pch";
+				INFOPLIST_FILE = "Drawing/Drawing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C656A66414594493005306FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Drawing.app/Drawing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drawing/Drawing-Prefix.pch";
+				INFOPLIST_FILE = "DrawingTests/DrawingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C656A66514594493005306FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Drawing.app/Drawing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drawing/Drawing-Prefix.pch";
+				INFOPLIST_FILE = "DrawingTests/DrawingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C656A62D14594492005306FA /* Build configuration list for PBXProject "Drawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C656A65E14594493005306FA /* Debug */,
+				C656A65F14594493005306FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C656A66014594493005306FA /* Build configuration list for PBXNativeTarget "Drawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C656A66114594493005306FA /* Debug */,
+				C656A66214594493005306FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C656A66314594493005306FA /* Build configuration list for PBXNativeTarget "DrawingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C656A66414594493005306FA /* Debug */,
+				C656A66514594493005306FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C656A62A14594492005306FA /* Project object */;
+}
