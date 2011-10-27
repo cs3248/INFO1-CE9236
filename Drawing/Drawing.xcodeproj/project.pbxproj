@@ -19,6 +19,9 @@
 		C656A65A14594493005306FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C656A65814594493005306FA /* InfoPlist.strings */; };
 		C656A65D14594493005306FA /* DrawingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C656A65C14594493005306FA /* DrawingTests.m */; };
 		C656A66814594C21005306FA /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = C656A66714594C21005306FA /* View.m */; };
+		C656A66C145A0708005306FA /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C656A669145A0708005306FA /* Icon-72.png */; };
+		C656A66D145A0708005306FA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C656A66A145A0708005306FA /* Icon.png */; };
+		C656A66E145A0708005306FA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C656A66B145A0708005306FA /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		C656A65C14594493005306FA /* DrawingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingTests.m; sourceTree = "<group>"; };
 		C656A66614594C21005306FA /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
 		C656A66714594C21005306FA /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		C656A669145A0708005306FA /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../Icon-72.png"; sourceTree = "<group>"; };
+		C656A66A145A0708005306FA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		C656A66B145A0708005306FA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,9 @@
 		C656A63E14594492005306FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C656A669145A0708005306FA /* Icon-72.png */,
+				C656A66A145A0708005306FA /* Icon.png */,
+				C656A66B145A0708005306FA /* Icon@2x.png */,
 				C656A63F14594492005306FA /* Drawing-Info.plist */,
 				C656A64014594492005306FA /* InfoPlist.strings */,
 				C656A64314594492005306FA /* main.m */,
@@ -219,6 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C656A64214594492005306FA /* InfoPlist.strings in Resources */,
+				C656A66C145A0708005306FA /* Icon-72.png in Resources */,
+				C656A66D145A0708005306FA /* Icon.png in Resources */,
+				C656A66E145A0708005306FA /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

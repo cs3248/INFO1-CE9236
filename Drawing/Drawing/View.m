@@ -55,7 +55,6 @@
     CGFloat green = 0.0;
     
     for(int d=0; d<=360; d++) {
-        
 
         CGContextBeginPath(c);
         CGContextMoveToPoint(c, 0, 0);
@@ -72,16 +71,6 @@
         else if(d<270) { red += 1.0/90; green -= 1.0/90; blue += 1.0/90;}
         else if(d<315) { red += 1.0/90; green += 1.0/90; blue -= 1.0/90;}
         else if(d<360) { red -= 1.0/45; green -= 1.0/45;}
-
-
-        
-        
-        
-        
-        
-        
-
-        
         
         
     }
