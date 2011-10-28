@@ -77,43 +77,6 @@
     
     
     
-
-    
-  /*  
-    
-    CGSize size = self.bounds.size;
-	CGFloat min = MIN(size.width, size.height);
-	CGFloat length = min * 5 / 8;           //of side
-    
-	CGMutablePathRef p = CGPathCreateMutable();   //right triangle
-	CGPathMoveToPoint(p, NULL, 0, 0);          //lower right vertex (the right angle)
-	CGPathAddLineToPoint(p, NULL, 0, length);  //upper right vertex
-	CGPathAddLineToPoint(p, NULL, -length, 0); //lower left vertex
-	CGPathCloseSubpath(p);
-    
-	CGContextRef c = UIGraphicsGetCurrentContext();
-	//Origin at right angle.
-	CGContextTranslateCTM(c,
-                          (size.width + length) / 2,
-                          (size.height + length) / 2
-                          );
-	CGContextScaleCTM(c, 1, -1);
-    
-	CGContextBeginPath(c);
-	CGContextAddPath(c, p);
-	CGContextSetRGBFillColor(c, 1.0, 0.0, 0.0, 1);
-	CGContextFillPath(c);
-    
-	CGContextBeginPath(c);
-	CGContextAddPath(c, p);
-	CGContextSetLineWidth(c, 10.0);
-	CGContextSetRGBStrokeColor(c, 0.0, 0.0, 1.0, 1);
-	CGContextStrokePath(c);
-	CGPathRelease(p);
-    */
-    
-    
-    
 }
 
 
