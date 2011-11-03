@@ -27,6 +27,15 @@
         TouchView *touchView0 = [[TouchView alloc] initWithFrame: f0 touchObject: touchObject0];        
         [touchViews addObject: touchView0];
         
+        
+        CGRect f2 = CGRectMake(self.bounds.size.width-80, 0, 80, 40);
+        TouchObject *touchObject2 = [[TouchObject alloc] 
+                                     initWithText: [[NSMutableString alloc] initWithString: @"follow"] 
+                                     color: [UIColor greenColor]];
+        TouchView *touchView2 = [[TouchView alloc] initWithFrame: f2 touchObject: touchObject2];        
+        [touchViews addObject: touchView2];
+        
+        
         CGRect f1 = CGRectMake(self.bounds.size.width/2, 0, 80, 40);
         TouchObject *touchObject1 = [[TouchObject alloc] 
                                      initWithText: [[NSMutableString alloc] initWithString: @"drag"] 
@@ -34,14 +43,9 @@
         TouchView *touchView1 = [[TouchView alloc] initWithFrame: f1 touchObject: touchObject1];        
         [touchViews addObject: touchView1];
         
-   /*     
-        CGRect f2 = CGRectMake(self.bounds.size.width-80, 0, 80, 40);
-        TouchObject *touchObject2 = [[TouchObject alloc] 
-                                     initWithText: [[NSMutableString alloc] initWithString: @"follow"] 
-                                     color: [UIColor greenColor]];
-        TouchView *touchView2 = [[TouchView alloc] initWithFrame: f2 touchObject: touchObject2];        
-        [touchViews addObject: touchView2];
-     */   
+        
+        
+       
         
         for(TouchView *t in touchViews) {
             [self addSubview: t];
@@ -74,8 +78,19 @@
 
 - (void) touchesMoved: (NSSet *) touches withEvent: (UIEvent *) event {
     if (touches.count > 0) {
-        TouchView *tv = [touchViews objectAtIndex: 1];
+        TouchView *tv = [touchViews objectAtIndex: 2];
+        TouchView *tvFollow = [touchViews objectAtIndex: 1];
         tv.center = [[touches anyObject] locationInView: self];
+        [UIView animateWithDuration: 1.0
+                              delay: 0.0
+                            options: UIViewAnimationOptionCurveEaseOut
+         | UIViewAnimationOptionAllowUserInteraction
+         | UIViewAnimationOptionBeginFromCurrentState
+                         animations: ^{
+                             tvFollow.center = [[touches anyObject] locationInView: self];
+                         }
+                         completion: NULL
+         ];
     }
 }
 
