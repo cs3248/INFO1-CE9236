@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class TouchObject;
 
-@interface TouchView : UIView
+@interface TouchView : UIView {
+    TouchObject *tObj;
+}
+
+@property(nonatomic, copy) TouchObject *tObj;
+
+-(id) initWithFrame:(CGRect)frame touchObject:(TouchObject*)t;
 
 @end

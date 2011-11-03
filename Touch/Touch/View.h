@@ -10,7 +10,8 @@
 @class TouchView;
 
 @interface View : UIView {
-    TouchView *touchView;
+    NSMutableArray *touchViews;
+    //TouchView *touchView;
     
 }
 

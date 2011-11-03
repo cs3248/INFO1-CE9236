@@ -15,6 +15,7 @@
 		C6191D541462840C007CE0F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6191D531462840C007CE0F2 /* AppDelegate.m */; };
 		C6191D5C1462871F007CE0F2 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = C6191D5B1462871F007CE0F2 /* View.m */; };
 		C6191D5F14628A04007CE0F2 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6191D5E14628A04007CE0F2 /* TouchView.m */; };
+		C6191D6214630ECB007CE0F2 /* TouchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C6191D6114630ECB007CE0F2 /* TouchObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		C6191D5B1462871F007CE0F2 /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
 		C6191D5D14628A04007CE0F2 /* TouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
 		C6191D5E14628A04007CE0F2 /* TouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
+		C6191D6014630ECB007CE0F2 /* TouchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchObject.h; sourceTree = "<group>"; };
+		C6191D6114630ECB007CE0F2 /* TouchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				C6191D521462840C007CE0F2 /* AppDelegate.h */,
 				C6191D531462840C007CE0F2 /* AppDelegate.m */,
+				C6191D6014630ECB007CE0F2 /* TouchObject.h */,
+				C6191D6114630ECB007CE0F2 /* TouchObject.m */,
 				C6191D5D14628A04007CE0F2 /* TouchView.h */,
 				C6191D5E14628A04007CE0F2 /* TouchView.m */,
 				C6191D5A1462871F007CE0F2 /* View.h */,
@@ -165,6 +170,7 @@
 				C6191D541462840C007CE0F2 /* AppDelegate.m in Sources */,
 				C6191D5C1462871F007CE0F2 /* View.m in Sources */,
 				C6191D5F14628A04007CE0F2 /* TouchView.m in Sources */,
+				C6191D6214630ECB007CE0F2 /* TouchObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
