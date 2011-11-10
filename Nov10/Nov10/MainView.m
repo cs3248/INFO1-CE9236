@@ -20,13 +20,13 @@
         // Initialization code
         
         imageArray = [NSArray arrayWithObjects:
-                      [[ImageView alloc] initWithImage: [UIImage imageNamed: @"drawing screen cap.png"]],
-                      [[ImageView alloc] initWithImage: [UIImage imageNamed: @"DSCN0419.png"]],
-                      [[ImageView alloc] initWithImage: [UIImage imageNamed: @"DSCN0515.png"]],
-                      [[ImageView alloc] initWithImage: [UIImage imageNamed: @"DSCN1587.png"]],
+                      [UIImage imageNamed: @"drawing screen cap.png"],
+                      [UIImage imageNamed: @"DSCN0515.png"],
+                      [UIImage imageNamed: @"DSCN0419.png"],
+                      [UIImage imageNamed: @"DSCN1587.png"],
                       nil
                       ];
-        
+  
         views = [NSArray arrayWithObjects:
                  [[ImageChoiceView alloc] initWithFrame: self.bounds imageArray: imageArray],
                   [[ImageManipView alloc] initWithFrame: self.bounds],
@@ -43,6 +43,32 @@
     }
     return self;
 }
+
+- (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
+	
+	/*
+     Assume a swipe has just ended.  A more complicated program could
+     distinguish between left vs. rights wipes, and perform a
+     UIViewAnimationOptionTransitionFlipFromLeft or a
+     UIViewAnimationOptionTransitionFlipFromRight.
+     
+     In UIViewAnimationOptionTransitionFlipFromLeft, the left edge moves
+     to the right, and the right edge moves away from the user and to the
+     left.
+     */
+    
+	NSUInteger newIndex = 1 - viewIndex;	//toggle the index
+    
+	[UIView transitionFromView: [views objectAtIndex: viewIndex]
+                        toView: [views objectAtIndex: newIndex]
+                      duration: 1
+                       options: UIViewAnimationOptionTransitionFlipFromLeft
+                    completion: NULL
+     ];
+    
+	viewIndex = newIndex;
+}
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

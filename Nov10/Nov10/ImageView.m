@@ -12,7 +12,7 @@
 @implementation ImageView
 
 
-- (id) initWithView: (ImageChoiceView *) v Image: (UIImage *) img {
+- (id) initWithView: (ImageChoiceView*) v Image: (UIImage *) img index: (NSInteger) i {
 
 	if (img == nil) {	
 		return nil;
@@ -22,10 +22,14 @@
 	if (self) {
 		// Initialization code
 		self.userInteractionEnabled = YES;	//UIImageView defaults to NO.
-		icv = v;
+        index = i;
+        icv=v;
 	}
 	return self;
 }
 
+- (void) touchesBegan: (NSSet *) touches withEvent: (UIEvent *) event {
+	icv.currentImage = index;
+}	
 
 @end

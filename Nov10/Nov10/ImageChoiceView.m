@@ -11,7 +11,7 @@
 
 @implementation ImageChoiceView
 
-@synthesize imageArray;
+@synthesize currentImage;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -27,28 +27,35 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        imageArray = imgArr;
-        float margin = 40;
+        NSArray *imageArray = imgArr;
+
 
         
         for(int i=0; i<4; i++) {
-            ImageView *iv = [imageArray objectAtIndex: i];
-            CGSize tileSize = iv.image.size;
-            CGSize viewSize = self.bounds.size;
             
-            self.bounds = CGRectMake(
-                                     .5 * (tileSize.width  + margin) - viewSize.width  / 2,
-                                     .5 * (tileSize.height + margin) - viewSize.height / 2,
-                                     viewSize.width,
-                                     viewSize.height
-                                     );
-            iv.center = CGPointMake(
-                                          (i+1)%2 * (tileSize.width  + margin),
-                                          i%2 * (tileSize.height + margin)
-                                          );
+            
+            ImageView *iv = [[ImageView alloc] initWithView: self Image: [imageArray objectAtIndex: i] index: i];
+            
+
+            CGFloat x = 80;
+            CGFloat y = 80;
+            
+            if(i%2==1) x += self.bounds.size.width/2;
+            if(i>1) y += self.bounds.size.height/2-80;
+                
+            
+            
+            
+            iv.center = CGPointMake(x,y);
+            
+            iv.transform = CGAffineTransformMakeScale(.20,.20);
+            
+            [imageViewArray addObject: iv];
+            
             [self addSubview: iv];
 
         }
+        
         
                
         
@@ -62,9 +69,14 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
+ 
+ UIFont *f = [UIFont systemFontOfSize: 32.0];
+ NSString *s = @"Choose an image";
+ CGPoint p = CGPointMake(10, self.bounds.size.height-20.0);
+    [s drawAtPoint: p withFont: f];
 }
-*/
 
+*/
 
 
 @end

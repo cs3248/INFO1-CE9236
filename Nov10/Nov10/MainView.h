@@ -12,6 +12,7 @@
     NSArray *views;
     NSInteger viewIndex;
     NSArray *imageArray;
+    NSArray *imageViewArray;
 }
 
 @end

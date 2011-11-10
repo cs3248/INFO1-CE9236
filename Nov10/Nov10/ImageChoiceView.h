@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ImageChoiceView : UIView {
-    NSArray *imageArray;
+    NSMutableArray *imageViewArray;
     NSInteger currentImage;
 }
 
-@property(nonatomic, copy) NSArray *imageArray;
+@property (nonatomic, assign) NSInteger currentImage;
 
 - (id)initWithFrame:(CGRect)frame imageArray: (NSArray*)imgArr;
 

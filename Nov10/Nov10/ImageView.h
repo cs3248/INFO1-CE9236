@@ -11,9 +11,11 @@
 
 
 @interface ImageView : UIImageView {
+    NSInteger index;
     ImageChoiceView *icv;
     
 }
 
+- (id) initWithView: (ImageChoiceView*) v Image: (UIImage *) img index: (NSInteger) i;
 
 @end
