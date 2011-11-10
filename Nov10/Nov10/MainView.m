@@ -28,7 +28,7 @@
                       ];
   
         views = [NSArray arrayWithObjects:
-                 [[ImageChoiceView alloc] initWithFrame: self.bounds imageArray: imageArray],
+                 [[ImageChoiceView alloc] initWithFrame: self.bounds view: self imageArray: imageArray],
                   [[ImageManipView alloc] initWithFrame: self.bounds],
                   nil
                 ];

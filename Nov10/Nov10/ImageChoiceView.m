@@ -8,6 +8,7 @@
 
 #import "ImageChoiceView.h"
 #import "ImageView.h"
+#import "MainView.h"
 
 @implementation ImageChoiceView
 
@@ -22,12 +23,13 @@
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame imageArray: (NSArray*)imgArr
+- (id)initWithFrame:(CGRect)frame view: (MainView*) v imageArray: (NSArray*)imgArr
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
         NSArray *imageArray = imgArr;
+        mainView = v;
 
 
         
@@ -63,6 +65,9 @@
     return self;
 }
 
+- (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
+    [mainView touchesEnded: nil withEvent: nil];
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

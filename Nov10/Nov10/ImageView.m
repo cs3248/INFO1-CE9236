@@ -28,8 +28,9 @@
 	return self;
 }
 
-- (void) touchesBegan: (NSSet *) touches withEvent: (UIEvent *) event {
+- (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
 	icv.currentImage = index;
+    [icv touchesEnded: nil withEvent: nil];
 }	
 
 @end

@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MainView;
 
 @interface ImageChoiceView : UIView {
     NSMutableArray *imageViewArray;
     NSInteger currentImage;
+    MainView *mainView;
 }
 
 @property (nonatomic, assign) NSInteger currentImage;
 
-- (id)initWithFrame:(CGRect)frame imageArray: (NSArray*)imgArr;
+- (id)initWithFrame:(CGRect)frame view: (MainView*) view imageArray: (NSArray*)imgArr;
 
 @end
