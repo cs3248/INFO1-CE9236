@@ -13,6 +13,8 @@
 
 @implementation MainView
 
+@synthesize imageArray;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -29,7 +31,7 @@
   
         views = [NSArray arrayWithObjects:
                  [[ImageChoiceView alloc] initWithFrame: self.bounds view: self imageArray: imageArray],
-                  [[ImageManipView alloc] initWithFrame: self.bounds],
+                 [[ImageManipView alloc] initWithFrame: self.bounds mainView: self],
                   nil
                 ];
         
@@ -56,6 +58,15 @@
      to the right, and the right edge moves away from the user and to the
      left.
      */
+    ImageChoiceView *icv = [views objectAtIndex: 0];
+    ImageManipView *imv = [views objectAtIndex: 1];
+    
+    if(viewIndex==0) {
+        [imv setNewImage: icv.currentImage];
+    }
+    
+    
+    
     
 	NSUInteger newIndex = 1 - viewIndex;	//toggle the index
     

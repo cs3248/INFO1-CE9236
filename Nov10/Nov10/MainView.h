@@ -15,4 +15,6 @@
     NSArray *imageViewArray;
 }
 
+@property(nonatomic, copy) NSArray *imageArray;
+
 @end

@@ -13,6 +13,7 @@
 @implementation ImageChoiceView
 
 @synthesize currentImage;
+@synthesize imageViewArray;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -28,8 +29,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.window.backgroundColor = [UIColor whiteColor];
+        imageViewArray = [[NSMutableArray alloc] init];
         NSArray *imageArray = imgArr;
         mainView = v;
+        currentImage = 0;
 
 
         
@@ -44,9 +48,7 @@
             
             if(i%2==1) x += self.bounds.size.width/2;
             if(i>1) y += self.bounds.size.height/2-80;
-                
-            
-            
+             
             
             iv.center = CGPointMake(x,y);
             
@@ -55,9 +57,17 @@
             [imageViewArray addObject: iv];
             
             [self addSubview: iv];
-
+            
+            
         }
-        
+            
+        CGRect f = CGRectMake(10,self.bounds.size.height-40.0,
+                              self.bounds.size.width,40);
+        UILabel *label = [[UILabel alloc] initWithFrame: f];
+        label.font = [UIFont systemFontOfSize: 32.0];
+        label.textColor = [UIColor redColor];
+        label.text = @"Choose an image...";
+        [self addSubview: label];
         
                
         
@@ -65,7 +75,8 @@
     return self;
 }
 
-- (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
+- (void) touch {
+
     [mainView touchesEnded: nil withEvent: nil];
 }
 /*
@@ -75,10 +86,7 @@
 {
     // Drawing code
  
- UIFont *f = [UIFont systemFontOfSize: 32.0];
- NSString *s = @"Choose an image";
- CGPoint p = CGPointMake(10, self.bounds.size.height-20.0);
-    [s drawAtPoint: p withFont: f];
+
 }
 
 */

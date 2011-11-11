@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ImageView;
+@class MainView;
 
-@interface ImageManipView : UIView
+@interface ImageManipView : UIView {
+    MainView *mainView;
+    ImageView *imageView;
+}
+
+@property(nonatomic, copy) ImageView *imageView;
+
+- (id)initWithFrame:(CGRect)frame mainView: (MainView*) mainView;
+- (void) setNewImage: (NSInteger) i;
 
 @end

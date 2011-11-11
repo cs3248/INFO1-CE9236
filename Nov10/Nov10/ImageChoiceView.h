@@ -16,7 +16,9 @@
 }
 
 @property (nonatomic, assign) NSInteger currentImage;
+@property (nonatomic, retain) NSMutableArray *imageViewArray;
 
 - (id)initWithFrame:(CGRect)frame view: (MainView*) view imageArray: (NSArray*)imgArr;
+- (void) touch;
 
 @end

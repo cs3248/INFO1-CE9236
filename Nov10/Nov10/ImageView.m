@@ -29,8 +29,9 @@
 }
 
 - (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
+    NSLog(@"%g x %g", self.bounds.size.width, self.bounds.size.height);
 	icv.currentImage = index;
-    [icv touchesEnded: nil withEvent: nil];
+    [icv touch];
 }	
 
 @end
