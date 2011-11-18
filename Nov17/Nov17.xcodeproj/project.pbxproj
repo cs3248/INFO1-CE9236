@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C61EDBD91474696000980F13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61EDBD81474696000980F13 /* UIKit.framework */; };
+		C61EDBDB1474696000980F13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61EDBDA1474696000980F13 /* Foundation.framework */; };
+		C61EDBDD1474696000980F13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61EDBDC1474696000980F13 /* CoreGraphics.framework */; };
+		C61EDBE31474696000980F13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C61EDBE11474696000980F13 /* InfoPlist.strings */; };
+		C61EDBE51474696000980F13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EDBE41474696000980F13 /* main.m */; };
+		C61EDBE91474696000980F13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EDBE81474696000980F13 /* AppDelegate.m */; };
+		C61EDBF11474D97F00980F13 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EDBF01474D97F00980F13 /* MainView.m */; };
+		C61EDBF41474EB8C00980F13 /* MediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EDBF31474EB8C00980F13 /* MediaView.m */; };
+		C61EDC0614750CAB00980F13 /* 04 Italy, Restaurant.aif in Resources */ = {isa = PBXBuildFile; fileRef = C61EDBFD14750CAB00980F13 /* 04 Italy, Restaurant.aif */; };
+		C61EDC0714750CAB00980F13 /* 14 Brazil, Jungle, Amazon Jungle.aif in Resources */ = {isa = PBXBuildFile; fileRef = C61EDBFE14750CAB00980F13 /* 14 Brazil, Jungle, Amazon Jungle.aif */; };
+		C61EDC0814750CAB00980F13 /* 14 Indian, Music Apache Ceremonial Song.aif in Resources */ = {isa = PBXBuildFile; fileRef = C61EDBFF14750CAB00980F13 /* 14 Indian, Music Apache Ceremonial Song.aif */; };
+		C61EDC0914750CAB00980F13 /* 14-16 Water, Ocean.aif in Resources */ = {isa = PBXBuildFile; fileRef = C61EDC0014750CAB00980F13 /* 14-16 Water, Ocean.aif */; };
+		C61EDC0A14750CAB00980F13 /* 00244=52635=40676=42474.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C61EDC0214750CAB00980F13 /* 00244=52635=40676=42474.mp4 */; };
+		C61EDC0B14750CAB00980F13 /* 00244=52725=52474=42459.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C61EDC0314750CAB00980F13 /* 00244=52725=52474=42459.mp4 */; };
+		C61EDC0C14750CAB00980F13 /* 00244=54135=53784=53237.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C61EDC0414750CAB00980F13 /* 00244=54135=53784=53237.mp4 */; };
+		C61EDC0D14750CAB00980F13 /* 00244=54545=53597=45400.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C61EDC0514750CAB00980F13 /* 00244=54545=53597=45400.mp4 */; };
+		C6C26A951475D8C200B25CD9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C26A941475D8C200B25CD9 /* AVFoundation.framework */; };
+		C6C26A981475D92F00B25CD9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C26A971475D92F00B25CD9 /* MediaPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C61EDBD41474696000980F13 /* Nov17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nov17.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61EDBD81474696000980F13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C61EDBDA1474696000980F13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C61EDBDC1474696000980F13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C61EDBE01474696000980F13 /* Nov17-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nov17-Info.plist"; sourceTree = "<group>"; };
+		C61EDBE21474696000980F13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C61EDBE41474696000980F13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C61EDBE61474696000980F13 /* Nov17-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nov17-Prefix.pch"; sourceTree = "<group>"; };
+		C61EDBE71474696000980F13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C61EDBE81474696000980F13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C61EDBEF1474D97F00980F13 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		C61EDBF01474D97F00980F13 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		C61EDBF21474EB8C00980F13 /* MediaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaView.h; sourceTree = "<group>"; };
+		C61EDBF31474EB8C00980F13 /* MediaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaView.m; sourceTree = "<group>"; };
+		C61EDBFD14750CAB00980F13 /* 04 Italy, Restaurant.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "04 Italy, Restaurant.aif"; sourceTree = "<group>"; };
+		C61EDBFE14750CAB00980F13 /* 14 Brazil, Jungle, Amazon Jungle.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "14 Brazil, Jungle, Amazon Jungle.aif"; sourceTree = "<group>"; };
+		C61EDBFF14750CAB00980F13 /* 14 Indian, Music Apache Ceremonial Song.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "14 Indian, Music Apache Ceremonial Song.aif"; sourceTree = "<group>"; };
+		C61EDC0014750CAB00980F13 /* 14-16 Water, Ocean.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "14-16 Water, Ocean.aif"; sourceTree = "<group>"; };
+		C61EDC0214750CAB00980F13 /* 00244=52635=40676=42474.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "00244=52635=40676=42474.mp4"; sourceTree = "<group>"; };
+		C61EDC0314750CAB00980F13 /* 00244=52725=52474=42459.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "00244=52725=52474=42459.mp4"; sourceTree = "<group>"; };
+		C61EDC0414750CAB00980F13 /* 00244=54135=53784=53237.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "00244=54135=53784=53237.mp4"; sourceTree = "<group>"; };
+		C61EDC0514750CAB00980F13 /* 00244=54545=53597=45400.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "00244=54545=53597=45400.mp4"; sourceTree = "<group>"; };
+		C6C26A941475D8C200B25CD9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C6C26A971475D92F00B25CD9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C61EDBD11474696000980F13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C26A981475D92F00B25CD9 /* MediaPlayer.framework in Frameworks */,
+				C6C26A951475D8C200B25CD9 /* AVFoundation.framework in Frameworks */,
+				C61EDBD91474696000980F13 /* UIKit.framework in Frameworks */,
+				C61EDBDB1474696000980F13 /* Foundation.framework in Frameworks */,
+				C61EDBDD1474696000980F13 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C61EDBC91474696000980F13 = {
+			isa = PBXGroup;
+			children = (
+				C61EDBDE1474696000980F13 /* Nov17 */,
+				C61EDBD71474696000980F13 /* Frameworks */,
+				C61EDBD51474696000980F13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C61EDBD51474696000980F13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C61EDBD41474696000980F13 /* Nov17.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C61EDBD71474696000980F13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6C26A971475D92F00B25CD9 /* MediaPlayer.framework */,
+				C6C26A941475D8C200B25CD9 /* AVFoundation.framework */,
+				C61EDBD81474696000980F13 /* UIKit.framework */,
+				C61EDBDA1474696000980F13 /* Foundation.framework */,
+				C61EDBDC1474696000980F13 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C61EDBDE1474696000980F13 /* Nov17 */ = {
+			isa = PBXGroup;
+			children = (
+				C61EDBE71474696000980F13 /* AppDelegate.h */,
+				C61EDBE81474696000980F13 /* AppDelegate.m */,
+				C61EDBEF1474D97F00980F13 /* MainView.h */,
+				C61EDBF01474D97F00980F13 /* MainView.m */,
+				C61EDBF21474EB8C00980F13 /* MediaView.h */,
+				C61EDBF31474EB8C00980F13 /* MediaView.m */,
+				C61EDBDF1474696000980F13 /* Supporting Files */,
+			);
+			path = Nov17;
+			sourceTree = "<group>";
+		};
+		C61EDBDF1474696000980F13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C61EDBFB14750CAB00980F13 /* media */,
+				C61EDBE01474696000980F13 /* Nov17-Info.plist */,
+				C61EDBE11474696000980F13 /* InfoPlist.strings */,
+				C61EDBE41474696000980F13 /* main.m */,
+				C61EDBE61474696000980F13 /* Nov17-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C61EDBFB14750CAB00980F13 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				C61EDBFC14750CAB00980F13 /* sounds */,
+				C61EDC0114750CAB00980F13 /* video */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		C61EDBFC14750CAB00980F13 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C61EDBFD14750CAB00980F13 /* 04 Italy, Restaurant.aif */,
+				C61EDBFE14750CAB00980F13 /* 14 Brazil, Jungle, Amazon Jungle.aif */,
+				C61EDBFF14750CAB00980F13 /* 14 Indian, Music Apache Ceremonial Song.aif */,
+				C61EDC0014750CAB00980F13 /* 14-16 Water, Ocean.aif */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		C61EDC0114750CAB00980F13 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				C61EDC0214750CAB00980F13 /* 00244=52635=40676=42474.mp4 */,
+				C61EDC0314750CAB00980F13 /* 00244=52725=52474=42459.mp4 */,
+				C61EDC0414750CAB00980F13 /* 00244=54135=53784=53237.mp4 */,
+				C61EDC0514750CAB00980F13 /* 00244=54545=53597=45400.mp4 */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C61EDBD31474696000980F13 /* Nov17 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C61EDBEC1474696000980F13 /* Build configuration list for PBXNativeTarget "Nov17" */;
+			buildPhases = (
+				C61EDBD01474696000980F13 /* Sources */,
+				C61EDBD11474696000980F13 /* Frameworks */,
+				C61EDBD21474696000980F13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nov17;
+			productName = Nov17;
+			productReference = C61EDBD41474696000980F13 /* Nov17.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C61EDBCB1474696000980F13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C61EDBCE1474696000980F13 /* Build configuration list for PBXProject "Nov17" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C61EDBC91474696000980F13;
+			productRefGroup = C61EDBD51474696000980F13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C61EDBD31474696000980F13 /* Nov17 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C61EDBD21474696000980F13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61EDBE31474696000980F13 /* InfoPlist.strings in Resources */,
+				C61EDC0614750CAB00980F13 /* 04 Italy, Restaurant.aif in Resources */,
+				C61EDC0714750CAB00980F13 /* 14 Brazil, Jungle, Amazon Jungle.aif in Resources */,
+				C61EDC0814750CAB00980F13 /* 14 Indian, Music Apache Ceremonial Song.aif in Resources */,
+				C61EDC0914750CAB00980F13 /* 14-16 Water, Ocean.aif in Resources */,
+				C61EDC0A14750CAB00980F13 /* 00244=52635=40676=42474.mp4 in Resources */,
+				C61EDC0B14750CAB00980F13 /* 00244=52725=52474=42459.mp4 in Resources */,
+				C61EDC0C14750CAB00980F13 /* 00244=54135=53784=53237.mp4 in Resources */,
+				C61EDC0D14750CAB00980F13 /* 00244=54545=53597=45400.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C61EDBD01474696000980F13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61EDBE51474696000980F13 /* main.m in Sources */,
+				C61EDBE91474696000980F13 /* AppDelegate.m in Sources */,
+				C61EDBF11474D97F00980F13 /* MainView.m in Sources */,
+				C61EDBF41474EB8C00980F13 /* MediaView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C61EDBE11474696000980F13 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C61EDBE21474696000980F13 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C61EDBEA1474696000980F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C61EDBEB1474696000980F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C61EDBED1474696000980F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nov17/Nov17-Prefix.pch";
+				INFOPLIST_FILE = "Nov17/Nov17-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C61EDBEE1474696000980F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nov17/Nov17-Prefix.pch";
+				INFOPLIST_FILE = "Nov17/Nov17-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C61EDBCE1474696000980F13 /* Build configuration list for PBXProject "Nov17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C61EDBEA1474696000980F13 /* Debug */,
+				C61EDBEB1474696000980F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C61EDBEC1474696000980F13 /* Build configuration list for PBXNativeTarget "Nov17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C61EDBED1474696000980F13 /* Debug */,
+				C61EDBEE1474696000980F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C61EDBCB1474696000980F13 /* Project object */;
+}
