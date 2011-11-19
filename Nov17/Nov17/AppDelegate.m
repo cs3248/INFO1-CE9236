@@ -18,7 +18,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-
+    volume = 1.0;
     
     view = [[MainView alloc] initWithFrame: [UIScreen mainScreen].applicationFrame];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -41,6 +41,7 @@
 - (void) playSound: (id) sender {
     NSMutableArray *mViews = view.views;
     MediaView *mView = [mViews objectAtIndex: 0];
+    mView.soundSelector.selectedSegmentIndex = mView.selectedSound;
     NSURL *url = [NSURL fileURLWithPath: [view.sounds objectAtIndex: mView.selectedSound]];
     NSError *error = nil;
     player = [[AVAudioPlayer alloc] initWithContentsOfURL: url error: &error];
@@ -49,13 +50,44 @@
     }
     
     player.delegate = self;
-    player.volume = 1.0;		//the default
+    player.volume = 1.0;		
     player.numberOfLoops = 0;	//negative for infinite loop
+    if(mute) player.volume = 0.0;
+    else player.volume = volume;
+    
+    [player play];
 }
 - (void) stopSound: (id) sender {
-    if (player != nil) {
+    if (player != nil && [player isPlaying]) {
         [player stop];
     }
+}
+
+- (void) toggleMute: (id) sender {
+    UISwitch *control = sender;
+    NSMutableArray *mViews = view.views;
+    MediaView *mView = [mViews objectAtIndex: 0];
+    mute = !control.on;
+    if(mute) { 
+        mView.volSlider.value = 0.0;
+        mView.volSlider.enabled = NO;
+        player.volume = 0.0;
+    }
+    else {
+        player.volume = volume;
+        mView.volSlider.enabled = YES;
+        mView.volSlider.value = volume;
+    }
+    
+    
+}
+
+- (void) volChanged: (id) sender {
+    UISlider *control = sender;
+    volume = control.value;
+    player.volume = volume;
+    
+    
 }
 
 - (void) videoChanged: (id) sender {

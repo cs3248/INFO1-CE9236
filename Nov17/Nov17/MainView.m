@@ -13,10 +13,8 @@
 @implementation MainView
 
 @synthesize views;
-@synthesize images;
 @synthesize videos;
 @synthesize sounds;
-@synthesize imageItems;
 @synthesize videoItems;
 @synthesize soundItems;
 @synthesize pageControl;
@@ -63,62 +61,18 @@
         
         views = [[NSMutableArray alloc] init];
         [views addObject: [[MediaView alloc] initWithFrame: CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)  view: self]];
-        //[views addObject: [[CreateView alloc] initWithFrame: CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height-20)  view: self]];
                 
         viewIndex = 0;
         [self addSubview: [views objectAtIndex: viewIndex]];
         
         
         
-        /*
-        
-        NSInteger numberOfPages = views.count;
-        
-
-		CGRect b = self.bounds;
-		CGSize s = CGSizeMake(16 * views.count, 16);	//size of UIPageControl
-		
-		CGRect f = CGRectMake(
-                              b.origin.x + (b.size.width - s.width) / 2,
-                              b.origin.y + (b.size.height - s.height),
-                              s.width,
-                              s.height
-                              );
-        
-		pageControl = [[UIPageControl alloc] initWithFrame: f];
-        
-		[pageControl addTarget: self
-                    action: @selector(pageChanged:)
-          forControlEvents: UIControlEventTouchUpInside
-         ];
-        
-		pageControl.backgroundColor = [UIColor blackColor];
-		pageControl.hidesForSinglePage = NO;	//default is NO
-		pageControl.numberOfPages = numberOfPages;
-		pageControl.currentPage = 0;			//default is 0
-		[self addSubview: pageControl];
-        
-      */  
-        
+               
         
     }
     return self;
 }
 
-- (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
-	
-	/*
-     Assume a swipe has just ended.  A more complicated program could
-     distinguish between left vs. rights wipes, and perform a
-     UIViewAnimationOptionTransitionFlipFromLeft or a
-     UIViewAnimationOptionTransitionFlipFromRight.
-     
-     In UIViewAnimationOptionTransitionFlipFromLeft, the left edge moves
-     to the right, and the right edge moves away from the user and to the
-     left.
-     */
-    
-}
 
 
 /*

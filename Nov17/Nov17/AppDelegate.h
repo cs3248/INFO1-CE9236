@@ -18,6 +18,9 @@
     MPMoviePlayerController *controller;
     MainView *view;
     UIWindow *_window;
+    CGFloat volume;
+    Boolean mute;
+    
 }
 
 @property (strong, nonatomic) UIWindow *window;
@@ -25,6 +28,8 @@
 - (void) soundChanged: (id) sender;
 - (void) playSound: (id) sender;
 - (void) stopSound: (id) sender;
+- (void) toggleMute: (id) sender;
+- (void) volChanged: (id) sender;
 - (void) videoChanged: (id) sender;
 - (void) playbackDidFinish: (NSNotification *) notification;
 
