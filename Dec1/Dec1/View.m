@@ -67,7 +67,7 @@
     else if(!up && variant>8) variant-=deltaVariant;
     else if(!up) { up=YES; clockwise=YES; }
     
-    NSLog(@"%g", variant);
+    //NSLog(@"%g", variant);
     
     //if(clockwise) [self setTransform:CGAffineTransformMakeRotation (rotateAngle+=deltaAngle/variant)];
     //else [self setTransform:CGAffineTransformMakeRotation (rotateAngle-=deltaAngle/variant)];
@@ -112,8 +112,6 @@
     CGFloat red = 0.0;
     CGFloat blue = 0.0;
     CGFloat green = 0.0;
-    
-    //float variant = 180;
     
     for(int d=0; d<=variant; d++) {
         
