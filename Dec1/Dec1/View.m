@@ -37,7 +37,7 @@
         CGRect b = self.bounds;
         
         speedSelector = [[UISegmentedControl alloc] initWithItems: [NSArray arrayWithObjects: 
-                                                                    @"-1.00",@"-0.25",@"+0.25",@"+1.00",nil]];
+                                                                    @"-1.00",@"-0.25",@"⇅",@"+0.25",@"+1.00", nil]];
 		speedSelector.segmentedControlStyle = UISegmentedControlStylePlain;	
 		speedSelector.momentary = YES;	
 		speedSelector.center = CGPointMake(
@@ -62,9 +62,9 @@
 
 - (void) redraw: (CADisplayLink *) displayLink {
     
-    if(up && variant<1440) variant+=deltaVariant;
+    if(up && variant<900) variant+=deltaVariant;
     else if(up) { up=NO; clockwise=NO; }
-    else if(!up && variant>8) variant-=deltaVariant;
+    else if(!up && variant>4) variant-=deltaVariant;
     else if(!up) { up=YES; clockwise=YES; }
     
     //NSLog(@"%g", variant);
@@ -80,8 +80,10 @@
     UISegmentedControl *control = sender;
     if(control.selectedSegmentIndex==0 && deltaVariant > 0.75) deltaVariant-=1.0;
     else if(control.selectedSegmentIndex==1 && deltaVariant > 0.0) deltaVariant-=0.25;
-    else if(control.selectedSegmentIndex==2 && deltaVariant<40.0) deltaVariant+=0.25;
-    else if(control.selectedSegmentIndex==3 && deltaVariant<39.25) deltaVariant+=1.0;
+    else if(control.selectedSegmentIndex==2) up = !up;
+    else if(control.selectedSegmentIndex==3 && deltaVariant<40.0) deltaVariant+=0.25;
+    else if(control.selectedSegmentIndex==4 && deltaVariant<39.25) deltaVariant+=1.0;
+    
 }
 
 
@@ -96,9 +98,10 @@
     
     
     
-    UILabel *speed = [[UILabel alloc] initWithFrame: CGRectMake(self.bounds.size.width-100.0,10.0,self.bounds.size.width,40)];
+    UILabel *speed = [[UILabel alloc] initWithFrame: CGRectMake(self.bounds.size.width-115.0,10.0,self.bounds.size.width,40)];
     speed.font = [UIFont systemFontOfSize: 16.0];
-    speed.text = [NSString stringWithFormat:@"Speed: %g", deltaVariant];
+    if(up) speed.text = [NSString stringWithFormat:@"Speed: ↑%g", deltaVariant];
+    else   speed.text = [NSString stringWithFormat:@"Speed: ↓%g", deltaVariant];
     speed.textColor = [UIColor whiteColor];
     speed.backgroundColor = [UIColor blackColor];
     [self addSubview:speed];
