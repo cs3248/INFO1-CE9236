@@ -12,6 +12,7 @@
 @interface View : UIView {
     ViewController *viewController;
     UISegmentedControl *speedSelector;
+    UILabel *speedLabel;
     float variant;
     Boolean up;
     Boolean clockwise;

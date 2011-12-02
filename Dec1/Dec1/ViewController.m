@@ -31,4 +31,9 @@
 	[displayLink addToRunLoop: loop forMode: NSDefaultRunLoopMode];
 }
 
+- (void) dealloc {
+	NSRunLoop *loop = [NSRunLoop currentRunLoop];
+	[displayLink removeFromRunLoop: loop forMode: NSDefaultRunLoopMode];
+}
+
 @end

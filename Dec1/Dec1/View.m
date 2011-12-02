@@ -34,6 +34,15 @@
         title.backgroundColor = [UIColor blackColor];
         [self addSubview:title];
         
+        speedLabel = [[UILabel alloc] initWithFrame: CGRectMake(self.bounds.size.width-115.0,10.0,self.bounds.size.width,40)];
+        speedLabel.font = [UIFont systemFontOfSize: 16.0];
+        speedLabel.textColor = [UIColor whiteColor];
+        speedLabel.backgroundColor = [UIColor blackColor];
+        if(up) speedLabel.text = [NSString stringWithFormat:@"Speed: ↑%g", deltaVariant];
+        else   speedLabel.text = [NSString stringWithFormat:@"Speed: ↓%g", deltaVariant];
+        [self addSubview:speedLabel];
+        
+        
         CGRect b = self.bounds;
         
         speedSelector = [[UISegmentedControl alloc] initWithItems: [NSArray arrayWithObjects: 
@@ -62,7 +71,7 @@
 
 - (void) redraw: (CADisplayLink *) displayLink {
     
-    if(up && variant<900) variant+=deltaVariant;
+    if(up && variant<810) variant+=deltaVariant;
     else if(up) { up=NO; clockwise=NO; }
     else if(!up && variant>4) variant-=deltaVariant;
     else if(!up) { up=YES; clockwise=YES; }
@@ -94,17 +103,9 @@
     // Drawing code
     CGSize size = self.bounds.size;
     CGFloat min = MIN(size.width, size.height);
-    
-    
-    
-    
-    UILabel *speed = [[UILabel alloc] initWithFrame: CGRectMake(self.bounds.size.width-115.0,10.0,self.bounds.size.width,40)];
-    speed.font = [UIFont systemFontOfSize: 16.0];
-    if(up) speed.text = [NSString stringWithFormat:@"Speed: ↑%g", deltaVariant];
-    else   speed.text = [NSString stringWithFormat:@"Speed: ↓%g", deltaVariant];
-    speed.textColor = [UIColor whiteColor];
-    speed.backgroundColor = [UIColor blackColor];
-    [self addSubview:speed];
+
+    if(up) speedLabel.text = [NSString stringWithFormat:@"Speed: ↑%g", deltaVariant];
+    else   speedLabel.text = [NSString stringWithFormat:@"Speed: ↓%g", deltaVariant];
      
     CGPoint center = CGPointMake(0,0);
     CGFloat radius = (.8 * min)/2;
