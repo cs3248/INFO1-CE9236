@@ -144,7 +144,15 @@
     self.scale=1.0;
     self.rotation=0;
     self.pan = CGPointZero;
-    self.currentImage.transform = [self transformImage];
+    [UIView animateWithDuration: 0.5
+                          delay: 0.0
+                        options: UIViewAnimationOptionCurveEaseInOut
+                     animations: ^{
+                         self.currentImage.transform = [self transformImage];
+                     }
+                     completion: NULL
+     ];
+    
 
 }
 
