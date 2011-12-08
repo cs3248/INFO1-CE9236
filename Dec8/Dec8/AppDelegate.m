@@ -11,10 +11,12 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize defaultImage = _defaultImage;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.defaultImage = [[UIImage alloc] init];
     return YES;
 }
 							

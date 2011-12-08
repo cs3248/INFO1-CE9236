@@ -10,6 +10,7 @@
 
 @interface FirstViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UITapGestureRecognizer) NSArray *tapGestureRecognizers;
 @property (weak, nonatomic) IBOutlet UIImageView *selectedImage;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *images;
 

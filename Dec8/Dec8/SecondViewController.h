@@ -11,17 +11,13 @@
 @interface SecondViewController : UIViewController
 
 @property (strong, nonatomic) IBOutletCollection(id) NSArray *gestureRecognizers;
-
-
-
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGesture;
 
 @property (strong, nonatomic) IBOutlet UIImageView *currentImage;
 
-- (IBAction)pinched:(id)sender;
-- (IBAction)rotated:(id)sender;
-- (IBAction)panned:(id)sender;
-
-
+- (void)swapImage:(NSNotification *)notification;
+- (IBAction)transformViaGesture:(id)sender;
+- (IBAction)resetImage:(id)sender;
 
 
 @end

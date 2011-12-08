@@ -7,9 +7,10 @@
 //
 
 #import "FirstViewController.h"
-#import "SecondViewController.h"
+#import "AppDelegate.h"
 
 @implementation FirstViewController
+@synthesize tapGestureRecognizers = _tapGestureRecognizers;
 @synthesize selectedImage = _selectedImage;
 @synthesize images = _images;
 
@@ -18,6 +19,9 @@
     UIImageView *tappedView = (UIImageView *)sender.view;
     //NSLog(@"image selected = %@", tappedView.description);
     self.selectedImage.image = tappedView.image;
+    ((AppDelegate *)[UIApplication sharedApplication].delegate).defaultImage = self.selectedImage.image;
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"swapImage" 
+                                                        object:self.selectedImage.image];
     
     
 }
@@ -35,11 +39,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self imageTapped: [self.tapGestureRecognizers lastObject]];
     
 }
 
 - (void)viewDidUnload
 {
+    [self setTapGestureRecognizers:nil];
     [self setSelectedImage:nil];
     [self setImages:nil];
     [super viewDidUnload];
