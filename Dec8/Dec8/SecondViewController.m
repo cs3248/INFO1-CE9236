@@ -16,8 +16,6 @@
 @end
 
 @implementation SecondViewController
-@synthesize pinchRecognizer = _pinchRecognizer;
-@synthesize rotateRecognizer = _rotateRecognizer;
 @synthesize gestureRecognizers = _gestureRecognizers;
 @synthesize currentImage = _currentImage;
 @synthesize scale = _scale;
@@ -56,9 +54,6 @@
 - (void)viewDidUnload
 {
     [self setCurrentImage:nil];
-    [self setPinchRecognizer:nil];
-    [self setRotateRecognizer:nil];
-    [self setGestureRecognizers:nil];
     [self setGestureRecognizers:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.

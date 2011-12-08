@@ -10,8 +10,6 @@
 
 @interface SecondViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIPinchGestureRecognizer *pinchRecognizer;
-@property (strong, nonatomic) IBOutlet UIRotationGestureRecognizer *rotateRecognizer;
 @property (strong, nonatomic) IBOutletCollection(id) NSArray *gestureRecognizers;
 
 
@@ -22,6 +20,8 @@
 - (IBAction)pinched:(id)sender;
 - (IBAction)rotated:(id)sender;
 - (IBAction)panned:(id)sender;
+
+
 
 
 @end

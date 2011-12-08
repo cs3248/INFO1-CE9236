@@ -124,9 +124,9 @@
                     <navigationItem key="navigationItem" id="Ves-aZ-jIn"/>
                     <connections>
                         <outlet property="currentImage" destination="B1K-ik-bzi" id="Vbu-Hv-YJ9"/>
-                        <outlet property="pinchRecognizer" destination="Pn8-Y6-ybW" id="0an-vL-5lW"/>
-                        <outlet property="rotateRecognizer" destination="92L-0I-drb" id="Eo6-gk-Duc"/>
                         <outletCollection property="gestureRecognizers" destination="uer-uQ-9YU" id="Slr-mz-aId"/>
+                        <outletCollection property="gestureRecognizers" destination="Pn8-Y6-ybW" id="Q8y-9O-pkP"/>
+                        <outletCollection property="gestureRecognizers" destination="92L-0I-drb" id="L97-XD-ebS"/>
                     </connections>
                 </viewController>
                 <pinchGestureRecognizer id="Pn8-Y6-ybW">
