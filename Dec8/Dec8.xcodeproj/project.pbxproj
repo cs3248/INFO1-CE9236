@@ -26,7 +26,6 @@
 		C68F04021490623300F12C95 /* DSCN1587.png in Resources */ = {isa = PBXBuildFile; fileRef = C68F03FE1490623300F12C95 /* DSCN1587.png */; };
 		C6D3667B1490B97A0076C78D /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3667A1490B9790076C78D /* ModalViewController.m */; };
 		C6D366801490BFAF0076C78D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D3667D1490BFAF0076C78D /* Icon@2x.png */; };
-		C6D366811490BFAF0076C78D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D3667E1490BFAF0076C78D /* Icon-72.png */; };
 		C6D366821490BFAF0076C78D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D3667F1490BFAF0076C78D /* Icon.png */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		C6D366791490B9790076C78D /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		C6D3667A1490B9790076C78D /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		C6D3667D1490BFAF0076C78D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		C6D3667E1490BFAF0076C78D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		C6D3667F1490BFAF0076C78D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				C6D3667D1490BFAF0076C78D /* Icon@2x.png */,
-				C6D3667E1490BFAF0076C78D /* Icon-72.png */,
 				C6D3667F1490BFAF0076C78D /* Icon.png */,
 				C68F03FB1490623300F12C95 /* drawing screen cap.png */,
 				C68F03FC1490623300F12C95 /* DSCN0419.png */,
@@ -202,7 +199,6 @@
 				C68F04011490623300F12C95 /* DSCN0515.png in Resources */,
 				C68F04021490623300F12C95 /* DSCN1587.png in Resources */,
 				C6D366801490BFAF0076C78D /* Icon@2x.png in Resources */,
-				C6D366811490BFAF0076C78D /* Icon-72.png in Resources */,
 				C6D366821490BFAF0076C78D /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
