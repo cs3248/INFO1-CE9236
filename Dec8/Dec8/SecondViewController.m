@@ -123,7 +123,8 @@
         UIRotationGestureRecognizer *gesture = sender;
         if ((gesture.state == UIGestureRecognizerStateChanged) ||
             (gesture.state == UIGestureRecognizerStateEnded)) {
-            self.rotation = gesture.rotation;
+            self.rotation += gesture.rotation;
+            gesture.rotation = 0;
         }
     }  else if([sender isKindOfClass:[UIPanGestureRecognizer class]]) {
         UIPanGestureRecognizer *gesture = sender;
