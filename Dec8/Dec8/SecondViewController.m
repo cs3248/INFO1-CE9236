@@ -66,6 +66,10 @@
     self.currentImage.userInteractionEnabled = YES;
     self.tapGesture.numberOfTapsRequired = 2;
     
+    for(UIGestureRecognizer *gestureRecog in self.gestureRecognizers) {
+        gestureRecog.delegate = self;
+    }
+    
     [[NSNotificationCenter defaultCenter] addObserver:self 
                                              selector:@selector(swapImage:) 
                                                  name:@"swapImage" 
@@ -108,7 +112,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
 }
 
-
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
+}
 
 - (IBAction)transformViaGesture:(id)sender {
 
