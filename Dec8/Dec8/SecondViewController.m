@@ -114,7 +114,8 @@
 
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 {
-    return YES;
+    return !([gestureRecognizer isKindOfClass:[UITapGestureRecognizer class]]) ;
+    //return YES;
 }
 
 - (IBAction)transformViaGesture:(id)sender {
@@ -136,7 +137,7 @@
     }  else if([sender isKindOfClass:[UIPanGestureRecognizer class]]) {
         UIPanGestureRecognizer *gesture = sender;
         if (((gesture.state == UIGestureRecognizerStateChanged) ||
-            (gesture.state == UIGestureRecognizerStateEnded)) && gesture.numberOfTouches == 1) {
+            (gesture.state == UIGestureRecognizerStateEnded)) && gesture.numberOfTouches == 2) {
             self.pan = CGPointMake(self.pan.x+[gesture translationInView:self.view].x, self.pan.y+[gesture translationInView:self.view].y);
             [gesture setTranslation:CGPointZero inView:self.view];
         }
