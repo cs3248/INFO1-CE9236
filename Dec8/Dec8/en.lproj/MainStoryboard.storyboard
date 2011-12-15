@@ -221,15 +221,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pan" lineBreakMode="tailTruncation" minimumFontSize="10" id="fHE-dK-Fsu">
-                                <rect key="frame" x="47" y="217" width="110" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pan" lineBreakMode="tailTruncation" minimumFontSize="10" id="cnO-ko-6D1">
+                                <rect key="frame" x="47" y="154" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Double tap to reset" lineBreakMode="tailTruncation" minimumFontSize="10" id="dpL-t7-oAI">
-                                <rect key="frame" x="47" y="246" width="146" height="21"/>
+                                <rect key="frame" x="47" y="217" width="146" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
