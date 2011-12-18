@@ -25,7 +25,7 @@
 }
 
 - (NSString *) generateQueryString {
-    NSString *finalURL;
+    NSString *finalURL = @"";
     
     if([self.message.text length] > 0) {
         NSString *username = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
@@ -51,19 +51,16 @@
 
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField { 
-    if([self.message.text length] > 0) {
-        [self.message resignFirstResponder]; 
+    [self.message resignFirstResponder]; 
         
-        if([self splitWallViewController]) {
-            [self splitWallViewController].queryString = [self generateQueryString];
-            
-            
-        } else {
-            //perform segue
-            [self performSegueWithIdentifier:@"showWall" sender:self];
-        }
-        
+    if([self splitWallViewController]) {
+        [self splitWallViewController].queryString = [self generateQueryString];
+                        
+    } else {
+        //perform segue
+        [self performSegueWithIdentifier:@"showWall" sender:self];
     }
+        
     return YES; 
 }
      
@@ -94,7 +91,10 @@
     // Do any additional setup after loading the view from its nib.
     
     self.message.delegate = self;
+    
+    [self setContentSizeForViewInPopover:CGSizeMake(320, 200)];
 }
+
 
 - (void)viewDidUnload
 {
@@ -109,5 +109,6 @@
     // Return YES for supported orientations
     return YES;
 }
+
 
 @end

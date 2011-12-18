@@ -91,6 +91,8 @@
     self.username.delegate = self;
     
     self.username.text = (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
+    
+    [self setContentSizeForViewInPopover:CGSizeMake(320, 200)];
 }
 
 - (void)viewDidUnload
@@ -104,6 +106,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    //[self setContentSizeForViewInPopover:CGSizeMake(320, 200)];
 }
 
 - (void)viewDidAppear:(BOOL)animated

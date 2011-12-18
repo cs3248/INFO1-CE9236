@@ -46,6 +46,10 @@
 }
 
 - (void) setQueryString:(NSString *)queryString {
+    if (self.splitViewController) {
+        //TODO: figure this out
+        //[[self.splitViewController.viewControllers objectAtIndex:0] dismissPopoverAnimated:YES];
+    }
     if(_queryString || self.splitViewController) {
         _queryString = queryString;
         NSURL *url;
